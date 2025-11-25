@@ -30,6 +30,16 @@ function displayResults(data) {
     personName.textContent = data.name;
     summary.textContent = data.summary;
     
+    // Add sources if available
+    if (data.sources && data.sources.length > 0) {
+        const sourcesHtml = '<div class="sources-section"><h3>Sources</h3><ul class="sources-list">' +
+            data.sources.map(source => 
+                `<li><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title}</a></li>`
+            ).join('') +
+            '</ul></div>';
+        summary.insertAdjacentHTML('afterend', sourcesHtml);
+    }
+    
     // Format timestamp
     const date = new Date(data.timestamp);
     timestamp.textContent = date.toLocaleString();

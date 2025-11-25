@@ -201,6 +201,39 @@ button:disabled {
     text-align: center;
 }
 
+.sources-section {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.sources-section h3 {
+    color: #2d3748;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.sources-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sources-list li {
+    margin-bottom: 8px;
+}
+
+.sources-list a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.sources-list a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
 .error-state {
     text-align: center;
     padding: 40px 20px;
