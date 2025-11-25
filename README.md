@@ -2,7 +2,7 @@
 
 An AI-powered web application that searches for information about a person by name and generates a comprehensive summary using OpenAI's GPT-4 model.
 
-## Features
+## Features..
 
 - Simple, clean user interface
 - Name input form
